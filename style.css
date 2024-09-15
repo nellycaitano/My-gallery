@@ -23,6 +23,36 @@
     @apply text-[12px] md:text-[14px] font-write text-[#BDBDBD] font-semibold;
   }
   .picture{
-    @apply rounded-xl shadow-effect object-cover;
+    @apply object-cover rounded-xl shadow-effect;
   }
+  
 } 
+
+.move-left {
+  transform: translateX(-25%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-right {
+  transform: translateX(25%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-up {
+  transform: translateY(-25%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-down {
+  transform: translateY(25%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.reset-transform {
+  transition: transform 1s ease-out; 
+  transform: translateX(0) translateY(0);
+}
+
+.picture {
+  transition-timing-function: cubic-bezier(.14,.57,.68,.68);
+}
