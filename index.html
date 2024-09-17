@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="public/devchallenges.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
     <title>My-gallery</title>
   </head>
   <body class="max-w-5xl mx-auto">
@@ -16,7 +16,7 @@
           <h5 class="font-write text-[14px] md:text-[24px] text-[#4E5150] font-semibold mt-[11.24px] md:mt-4">Rodney Cotton</h5>
           <P class="font-write text-[14px] md:text-[10px] text-[#A9A9A9] font-semibold mt-1 md:mt-2">Helsinki, Finland</P>
         </div>
-        <div class="flex gap-[13px] md:gap-6 mt-3 md:mt-6 ">
+        <div class="flex gap-[13px] md:gap-6 mt-3 md:mt-6 xs:flex-row wt:flex-col wt:justify-center">
           <span class="follow">
             <p class="p1">100</p>
             <p class="p2">Posts</p> 
@@ -33,23 +33,78 @@
 
       </section>
 
-      <section class="mt-[39px] md:mt-[64px] flex flex-col items-center justify-center sm:ml-4 sm:mr-4">
+      <section class="mt-[39px] md:mt-[64px] xs:flex flex-col xs:items-center xs:justify-center sm:ml-4 sm:mr-4 wt:hidden xs:block ">
         <div  id="fst-section" class="flex gap-x-3 md:gap-x-8">
           <div class="group perspective">
             <img 
             src="public/photo1.png"
             alt="1" 
-            class="md:w-[299px] sm:w-[209.52px] sm:h-[209.52px] md:h-[299px] w-[109.32px] h-[109.52px] picture duration-500 ease-out group-hover:scale-120 group-hover:shadow-xl">
+            class="md:w-[299px] sm:w-[209.52px] sm:h-[209.52px]  md:h-[299px] xs:w-[109.32px] xs:h-[109.52px] picture duration-500 ease-out group-hover:scale-120 group-hover:shadow-xl">
           </div>
           <div class="group perspective">
             <img 
             src="public/photo2.png" 
             alt="2" 
-            class="md:w-[629px] md:h-[299px]  sm:h-[209.52px] h-[109.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+            class="md:w-[629px] md:h-[299px]  sm:h-[209.52px] xs:h-[109.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
           </div>
         </div>
 
-        <div id="snd-section" class="md:mt-8 mt-[11.72px] flex md:gap-x-9 gap-x-[13.16px] ">
+        <div id="snd-section" class="md:mt-8 mt-[11.72px] flex md:gap-x-9 gap-x-[13.16px]">
+          <div class="flex flex-col md:gap-y-8 gap-y-[11.72px] ">
+            <div id="sct-1" class="group perspective">
+              <img 
+              src="public/photo3.png" 
+              alt="3" 
+              class="md:w-[627px] md:h-[299px] xs:w-[229.25px] xs:h-[109.52px] sm:w-[424px] sm:h-[209.52px] picture duration-500 ease-out group-hover:scale-120 group-hover:shadow-xl">
+            </div>
+            <div id="sct-2" class="flex">
+                <div class="group perspective">
+                  <img 
+                  src="public/photo6.png" 
+                  alt="4" 
+                  class="md:w-[299px] md:h-[299px] w-[109.32px] xs:h-[109.52px] sm:w-[209.32px] sm:h-[209.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+                </div>
+                <div class="md:ml-[33px] ml-[12.07px] group perspective">
+                  <img 
+                  src="public/photo5.png" 
+                  alt="5" 
+                  class="md:w-[299px] md:h-[299px] xs:w-[109.32px] xs:h-[109.52px] sm:w-[209.32px] sm:h-[209.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+                </div>
+            </div>
+          </div>
+
+          <div class="group perspective">
+            <img 
+            src="public/photo_4.png" 
+            alt="5" 
+            class="md:w-[297px] md:h-[630px] xs:w-[108.52px] xs:h-[230.76px] sm:w-[208.52px] sm:h-[430.9px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+          </div>
+        </div>
+        
+        <div class="flex justify-center mt-8">
+          <button id="shuffle-btn" class="font-write text-[10px] md:text-[20px] px-4 py-2 mt-10 text-white transition-colors bg-[#9fb1a4] rounded hover:bg-[#99aa9f]">
+            Shuffle Images
+          </button>
+         </div>
+      </section>
+
+      <section class="mt-[39px] md:mt-[64px] flex flex-col items-center justify-center sm:ml-4 sm:mr-4 xs:hidden wt:block">
+        <div  id="fst-section" class="flex">
+          <div class="group perspective">
+            <img 
+            src="public/photo1.png"
+            alt="1" 
+            class="md:w-[299px] md:h-[299px] w-[109.32px] h-[109.52px] sm:w-[209.32px] sm:h-[209.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+          </div>
+          <div class="md:ml-[33px] ml-[12.07px] group perspective">
+            <img 
+            src="public/photo2.png" 
+            alt="2" 
+            class="md:w-[299px] md:h-[299px] w-[109.32px] h-[109.52px] sm:w-[209.32px] sm:h-[209.52px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
+          </div>
+        </div>
+
+        <div id="snd-section" class="md:mt-8 mt-[11.72px] flex md:gap-x-9 gap-x-[13.16px]">
           <div class="flex flex-col md:gap-y-8 gap-y-[11.72px] ">
             <div id="sct-1" class="group perspective">
               <img 
@@ -73,17 +128,23 @@
             </div>
           </div>
 
-          <div class="group perspective">
+         
+        </div>
+       <div class="mt-[11.72px] flex justify-center">
+          <div class="group perspective ">
             <img 
             src="public/photo_4.png" 
             alt="5" 
             class="md:w-[297px] md:h-[630px] w-[108.52px] h-[230.76px] sm:w-[208.52px] sm:h-[430.9px] picture duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl">
           </div>
-        </div>
-        
+       </div>
+
+       <div class="mt-[11.72px] flex justify-center wt:hidden xs:block">
         <button id="shuffle-btn" class="font-write text-[10px] md:text-[20px] px-4 py-2 mt-10 text-white transition-colors bg-[#9fb1a4] rounded hover:bg-[#99aa9f]">
           Shuffle Images
         </button>
+       </div>
+       
       </section>
     </div>
     

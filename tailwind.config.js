@@ -10,6 +10,11 @@ export default {
         'write':'Montserrat',
       },
 
+      screens: {
+        'xs': '280px',
+        'wt': '100px',  
+      },
+
       scale: {
         '120': '1.2',
         '130': '1.3',
